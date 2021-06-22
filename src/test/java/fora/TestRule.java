@@ -33,7 +33,7 @@ public class TestRule {
 		extentTest = extentReport.createTest(cenario.getId());
 		
 //		System.setProperty("webdriver.chrome.driver", "..\\foradacaixa-automation\\Drivers\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "/bin/bash");
+		System.setProperty("webdriver.chrome.driver", "/opt/chromedriver-2.37");
 
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true); 
