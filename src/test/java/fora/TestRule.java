@@ -32,9 +32,13 @@ public class TestRule {
 		}
 		extentTest = extentReport.createTest(cenario.getId());
 		
-		System.setProperty("webdriver.chrome.driver", "..\\foradacaixa\\Drivers\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "..\\foradacaixa-automation\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/bin/bash");
 
 		ChromeOptions options = new ChromeOptions();
+		options.setHeadless(true); 
+		options.addArguments("--no-sandbox"); 
+		options.addArguments("window-size=1920,1080");
 		options.addArguments("-user-data-dir=C:\\Users\\dkaiper\\AppData\\Local\\Google\\Chrome\\User Data");
 		
 		driver = new ChromeDriver(options);

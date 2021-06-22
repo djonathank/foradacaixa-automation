@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/resources/Cliente.feature", glue = { "" }, 
+@CucumberOptions(features = "src/test/java/fora/features/", glue = { "" }, 
 		monochrome = true, dryRun  = false)
 public class ClienteTest {
 
